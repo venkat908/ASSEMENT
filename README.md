@@ -38,7 +38,7 @@ The frontend will run at http://localhost:5173/ (default Vite port).
 
 Click Deploy.
 🔗 Deployed URL:
-https://google-notebooklm-clone.vercel.app
+https://assement-psi.vercel.app/
 
 🛠 Usage
 Upload a PDF file.
