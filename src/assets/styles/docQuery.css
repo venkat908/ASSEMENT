@@ -1,0 +1,144 @@
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #e5e7eb #ffffff; /* Use transparent background to avoid arrows */
+  border-radius: 8px;
+}
+
+/* *:hover {
+  scrollbar-width: thin;
+  scrollbar-color: #e9d5ff #ffffff00; 
+} */
+
+*::-webkit-scrollbar-corner {
+  background: transparent; /* No corner background */
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  scrollbar-color: #e9d5ff #ffffff00;
+  width: 6px;
+  border-radius: 10px;
+}
+
+/* ::-webkit-scrollbar-thumb:hover {
+  background: #E9D5FF
+ !important; /* Hover effect color */
+/* border-radius: 10px; */
+/* } */
+
+::-webkit-scrollbar-track:hover {
+  color: #e5e7eb;
+}
+
+textarea {
+  outline: none !important;
+  outline-style: none;
+  padding: 8px;
+  /* border: 0.5px solid rgb(233, 231, 231) !important; */
+  box-shadow: none;
+}
+
+textarea:focus {
+  outline: none !important;
+  outline-style: none;
+  /* border: 2px solid #2E0040 !important; */
+  box-shadow: none;
+}
+
+.typing-animation {
+  display: inline-block;
+}
+
+.dot {
+  display: inline-block;
+  width: 2px;
+  height: 2px;
+  background-color: #1f2937;
+  border-radius: 50%;
+  margin-right: 6px;
+  animation: dot-blink 1.5s infinite;
+}
+
+.dot:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.dot:nth-child(2) {
+  animation-delay: 0.3s;
+}
+
+.dot:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+.dot:nth-child(4) {
+  animation-delay: 0.9s;
+}
+
+.dot:nth-child(5) {
+  animation-delay: 1.2s;
+}
+
+@keyframes dot-blink {
+  0%,
+  20%,
+  100% {
+    transform: translateY(0);
+  }
+  10% {
+    transform: translateY(-8px);
+  }
+}
+
+.scroller {
+  overflow-y: scroll;
+  overflow-x: scroll;
+  /* scrollbar-color: #E5E7EB; */
+}
+
+/* Works on Chrome, Edge, and Safari */
+
+*::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 2px rgba(112, 112, 112, 0.3);
+}
+
+.custom-gradient-border {
+  border: 1px solid transparent;
+   border-color: #E5E7EB;
+
+}
+
+.scroller-downloading-doc:hover {
+  scrollbar-color: #e9d5ff #e5e7eb;
+  border-radius: 8px;
+}
+.scroller-downloading-doc::-webkit-scrollbar-track {
+  width: 6px;
+  border-radius: 8px;
+}
+
+.custom-gradient-border:hover {
+  border-image: linear-gradient(
+      to right,
+      #571eb3,
+      #4535c4,
+      #3745d0,
+      #265adf,
+      #156fef
+    )
+    1;
+  border-radius: 1px;
+}
+
+.scroll-down {
+  overflow-y: auto;
+  height: 100vh; /* or any other height you want */
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar-button {
+  display: none; /* Hide the scroll arrows */
+}
